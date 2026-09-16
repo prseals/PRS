@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home({logo}) {
   const products = [
@@ -57,7 +58,7 @@ function Home({logo}) {
 
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top industrial-navbar">
         <div className="container">
-          <a className="navbar-brand fw-bold" href="#home">
+          <a className="navbar-brand fw-bold" href="/">
             {/* <span className="brand-mark">P</span> */}
             <img 
                 className="brand-mark"
@@ -115,10 +116,10 @@ function Home({logo}) {
               </li>
 
               <li className="nav-item ms-lg-3">
-                <a href="#contact" className="btn btn-outline-warning px-4">
+                <Link to="/Login" className="btn btn-outline-warning px-4">
                     <i class="bi bi-person"> </i>
                     Login
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -505,18 +506,22 @@ function Home({logo}) {
                   <div>
                     <strong>Factory Address</strong>
                     <p>
-                      MIDC Industrial Area,
+                      Walhbhat X Road, Yamunabai Chawl,
                       <br />
-                      Jaysingpur, Kolhapur, Maharashtra, India
+                      S. T. Yadav Marg, Near Jawahar Nagar,
+                      <br />
+                      Goregaon(E), Mumbai - 400063.
                     </p>
                   </div>
 
                   <div>
                     <strong>Office Address</strong>
                     <p>
-                      MIDC Industrial Area,
-                      <br />
-                      Jaysingpur, Kolhapur, Maharashtra, India
+                        L.K. Akiwate Co-op. Industrial Estate,
+                        <br />
+                        Jaysingpur, Kolhapur - 416101,
+                        <br />
+                        Maharashtra, India.
                     </p>
                   </div>
                 </div>
