@@ -21,63 +21,63 @@ function Aside() {
                 </li>
 
                 <li className="nav-item mb-2">
-                    <a href="#" className="nav-link text-dark">
+                    <Link to="/Vendors" className="nav-link text-dark">
                         Vendors
-                    </a>
+                    </Link>
                 </li>
 
                 <li className="nav-item mb-2">
-                    <a href="#" className="nav-link text-dark">
+                    <Link to="/Customers" className="nav-link text-dark">
                         Customers
-                    </a>
+                    </Link>
                 </li>
 
                 <li className="nav-item mb-2">
-                    <a href="#" className="nav-link text-dark">
+                    <Link to="/Employees" className="nav-link text-dark">
                         Employees
-                    </a>
+                    </Link>
                 </li>
 
                 <li className="nav-item mb-2">
-                    <a href="#" className="nav-link text-dark">
+                    <Link to="/Dies" className="nav-link text-dark">
                         Dies
-                    </a>
+                    </Link>
                 </li>
 
                 <li className="nav-item mb-2">
-                    <a href="#" className="nav-link text-dark">
-                        Inventory
-                    </a>
+                    <Link to="/Inventories" className="nav-link text-dark">
+                        Inventories
+                    </Link>
                 </li>
 
                 <li className="nav-item mb-2">
-                    <a href="#" className="nav-link text-dark">
+                    <Link to="/Machines" className="nav-link text-dark">
                         Machines
-                    </a>
+                    </Link>
                 </li>
 
                 <li className="nav-item mb-2">
-                    <a href="#" className="nav-link text-dark">
+                    <Link to="/Sellinvoices" className="nav-link text-dark">
                         Sell Invoices
-                    </a>
+                    </Link>
                 </li>
 
                 <li className="nav-item mb-2">
-                    <a href="#" className="nav-link text-dark">
+                    <Link to="/Purchaseinvoices" className="nav-link text-dark">
                         Purchase Invoices
-                    </a>
+                    </Link>
                 </li>
 
                 <li className="nav-item mb-2">
-                    <a href="#" className="nav-link text-dark">
-                        Mails
-                    </a>
+                    <Link to="/Enquiries" className="nav-link text-dark">
+                        Mail Enquiries
+                    </Link>
                 </li>
 
                 <li className="nav-item mb-2">
-                    <a href="#" className="nav-link text-dark">
+                    <Link to="/Orders" className="nav-link text-dark">
                         Orders
-                    </a>
+                    </Link>
                 </li>
 
                 <li className="nav-item mb-2">
@@ -87,11 +87,10 @@ function Aside() {
                 </li>
 
                 <li className="nav-item mb-2">
-                    <a href="#" className="nav-link text-dark">
-                        Profile
-                    </a>
+                    <Link to="/Profiles" className="nav-link text-dark">
+                        Profiles
+                    </Link>
                 </li>
-
             </ul>
         </aside>
     )
