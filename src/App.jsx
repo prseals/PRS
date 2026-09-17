@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard'
 
 import logo from "./assets/logo_transparent.png";
 import { Routes, Route } from 'react-router-dom';
+import Products from './pages/Products';
 
 
 function App() {
@@ -23,6 +24,11 @@ function App() {
       <Route 
         path='/Dashboard'
         element={<Dashboard />}
+      />
+
+      <Route 
+        path='/Products'
+        element={<Products />}
       />
     </Routes>
   )
