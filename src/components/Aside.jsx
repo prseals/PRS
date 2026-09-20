@@ -15,6 +15,12 @@ function Aside() {
                 </li>
 
                 <li className="nav-item mb-2">
+                    <Link to="/Businessprofile" className="nav-link text-dark">
+                        Business Profile
+                    </Link>
+                </li>
+
+                <li className="nav-item mb-2">
                     <Link to="/Products" className="nav-link text-dark">
                         Products
                     </Link>
@@ -39,20 +45,26 @@ function Aside() {
                 </li>
 
                 <li className="nav-item mb-2">
+                    <Link to="/Machines" className="nav-link text-dark">
+                        Machines
+                    </Link>
+                </li>
+
+                <li className="nav-item mb-2">
                     <Link to="/Dies" className="nav-link text-dark">
                         Dies
                     </Link>
                 </li>
 
                 <li className="nav-item mb-2">
-                    <Link to="/Inventories" className="nav-link text-dark">
-                        Inventories
+                    <Link to="/Enquiries" className="nav-link text-dark">
+                        Mail Enquiries
                     </Link>
                 </li>
 
                 <li className="nav-item mb-2">
-                    <Link to="/Machines" className="nav-link text-dark">
-                        Machines
+                    <Link to="/Inventories" className="nav-link text-dark">
+                        Inventories
                     </Link>
                 </li>
 
@@ -65,12 +77,6 @@ function Aside() {
                 <li className="nav-item mb-2">
                     <Link to="/Purchaseinvoices" className="nav-link text-dark">
                         Purchase Invoices
-                    </Link>
-                </li>
-
-                <li className="nav-item mb-2">
-                    <Link to="/Enquiries" className="nav-link text-dark">
-                        Mail Enquiries
                     </Link>
                 </li>
 

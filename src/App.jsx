@@ -17,6 +17,7 @@ import Purchaseinvoices from './pages/Purchaseinvoices';
 import Enquiries from './pages/Enquiries';
 import Orders from './pages/Orders';
 import Profiles from './pages/Profiles';
+import BusinessProfile from './pages/BusinessProfile';
 
 
 function App() {
@@ -95,6 +96,11 @@ function App() {
       <Route 
         path='/Profiles'
         element={<Profiles />}
+      />
+
+      <Route 
+        path='/Businessprofile'
+        element={<BusinessProfile />}
       />
     </Routes>
   )
