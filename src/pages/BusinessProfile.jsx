@@ -4,6 +4,7 @@ import Aside from '../components/Aside'
 import authorized_sign from "../assets/authorized_sign.jpeg"
 import logo from "../assets/logo_transparent.png"
 import { Link } from 'react-router-dom'
+import MainPageHeader from '../components/MainPageHeader'
 
 function BusinessProfile() {
     const [isDisabled, setIsDisabled] = useState(true);
@@ -49,13 +50,10 @@ function BusinessProfile() {
                     <Aside />
 
                     <main className='col-md-9 col-lg-10 p-4'>
-                        <div className='d-flex justify-content-between align-items-center px-3'>
-                            <h2 className='display-6 mb-4'>Business Profile</h2>
-
-                            <p>
-                                <Link to='/Dashboard' className='text-decoration-none'>Home</Link> / <span className='text-secondary'>Business Profile</span>
-                            </p>
-                        </div>
+                        <MainPageHeader
+                            pageName={"Business Profile"}
+                            para={"Business Profile contains important data about organization."}
+                        />
 
                         <div className='card p-3 bg-light shadow-sm'>
                             <div className='card-body'>
@@ -76,7 +74,7 @@ function BusinessProfile() {
                                 <div className='container my-3'>
                                     <div className='row mb-4'>
                                         <div className='col-md-12 col-lg-6'>
-                                            <label className='form-label fw-bold'>Organization Name</label>
+                                            <label className='form-label'>Organization Name</label>
 
                                             <input
                                                 className='form-control shadow-sm'
@@ -89,7 +87,7 @@ function BusinessProfile() {
                                         </div>
 
                                         <div className='col-md-12 col-lg-6'>
-                                            <label className='form-label fw-bold'>GST Number</label>
+                                            <label className='form-label'>GST Number</label>
 
                                             <input
                                                 className='form-control shadow-sm'
@@ -104,7 +102,7 @@ function BusinessProfile() {
 
                                     <div className='row mb-4'>
                                         <div className='col-md-8 col-lg-8'>
-                                            <label className='form-label fw-bold'>Factory Address</label>
+                                            <label className='form-label'>Factory Address</label>
 
                                             <textarea
                                                 className='form-control shadow-sm'
@@ -117,7 +115,7 @@ function BusinessProfile() {
                                         </div>
 
                                         <div className='col-md-4 col-lg-4'>
-                                            <label className='form-label fw-bold'>Factory Pin Code</label>
+                                            <label className='form-label'>Factory Pin Code</label>
 
                                             <input
                                                 className='form-control shadow-sm'
@@ -132,7 +130,7 @@ function BusinessProfile() {
 
                                     <div className='row mb-4'>
                                         <div className='col-md-8 col-lg-8'>
-                                            <label className='form-label fw-bold'>Office Address</label>
+                                            <label className='form-label'>Office Address</label>
 
                                             <textarea
                                                 className='form-control shadow-sm'
@@ -145,7 +143,7 @@ function BusinessProfile() {
                                         </div>
 
                                         <div className='col-md-4 col-lg-4'>
-                                            <label className='form-label fw-bold'>Office Pin Code</label>
+                                            <label className='form-label'>Office Pin Code</label>
 
                                             <input
                                                 className='form-control shadow-sm'
@@ -159,8 +157,21 @@ function BusinessProfile() {
                                     </div>
 
                                     <div className='row mb-4'>
+                                        <div className='col-md-12 col-lg-4'>
+                                            <label className='form-label'>State Name (With Code)</label>
+
+                                            <input
+                                                className='form-control shadow-sm'
+                                                name='stateWithCode'
+                                                type="text"
+                                                disabled={isDisabled}
+                                                value={businessProfile.stateWithCode}
+                                                onChange={handlechange}
+                                            />
+                                        </div>
+                                        
                                          <div className='col-md-12 col-lg-4'>
-                                            <label className='form-label fw-bold'>Phone Number</label>
+                                            <label className='form-label'>Phone Number</label>
 
                                             <input
                                                 className='form-control shadow-sm'
@@ -173,7 +184,7 @@ function BusinessProfile() {
                                         </div>
 
                                         <div className='col-md-12 col-lg-4'>
-                                            <label className='form-label fw-bold'>Email Id</label>
+                                            <label className='form-label'>Email Id</label>
 
                                             <input
                                                 className='form-control shadow-sm'
@@ -184,24 +195,11 @@ function BusinessProfile() {
                                                 onChange={handlechange}
                                             />
                                         </div>
-
-                                        <div className='col-md-12 col-lg-4'>
-                                            <label className='form-label fw-bold'>State Name (With Code)</label>
-
-                                            <input
-                                                className='form-control shadow-sm'
-                                                name='stateWithCode'
-                                                type="text"
-                                                disabled={isDisabled}
-                                                value={businessProfile.stateWithCode}
-                                                onChange={handlechange}
-                                            />
-                                        </div>
                                     </div>
 
                                     <div className='row mb-4'>
                                         <div className='col-md-12 col-lg-6'>
-                                            <label className='form-label fw-bold'>Bank Name</label>
+                                            <label className='form-label'>Bank Name</label>
 
                                             <input
                                                 className='form-control shadow-sm'
@@ -214,7 +212,7 @@ function BusinessProfile() {
                                         </div>
 
                                         <div className='col-md-12 col-lg-6'>
-                                            <label className='form-label fw-bold'>Branch Name</label>
+                                            <label className='form-label'>Branch Name</label>
 
                                             <input
                                                 className='form-control shadow-sm'
@@ -229,7 +227,7 @@ function BusinessProfile() {
 
                                     <div className='row mb-4'>
                                         <div className='col-md-12 col-lg-6'>
-                                            <label className='form-label fw-bold'>Account Number</label>
+                                            <label className='form-label'>Account Number</label>
 
                                             <input
                                                 className='form-control shadow-sm'
@@ -242,7 +240,7 @@ function BusinessProfile() {
                                         </div>
 
                                         <div className='col-md-12 col-lg-6'>
-                                            <label className='form-label fw-bold'>Account Name</label>
+                                            <label className='form-label'>Account Name</label>
 
                                             <input
                                                 className='form-control shadow-sm'
@@ -257,7 +255,7 @@ function BusinessProfile() {
 
                                     <div className='row mb-4'>
                                         <div className='col-md-12 col-lg-6'>
-                                            <label className='form-label fw-bold'>IFSC Code</label>
+                                            <label className='form-label'>IFSC Code</label>
 
                                             <input
                                                 className='form-control shadow-sm'
@@ -270,7 +268,7 @@ function BusinessProfile() {
                                         </div>
 
                                         <div className='col-md-12 col-lg-6'>
-                                            <label className='form-label fw-bold'>MICR Code</label>
+                                            <label className='form-label'>MICR Code</label>
 
                                             <input
                                                 className='form-control shadow-sm'
@@ -287,7 +285,7 @@ function BusinessProfile() {
                                         <div className='col-md-12 col-lg-6'>
                                             <div className='row'>
                                                 <div className='col-sm-12'>
-                                                    <label className='form-label fw-bold'>Company's Logo</label>
+                                                    <label className='form-label'>Company's Logo</label>
                                                 </div>
 
                                                 <div className='offset-sm-2 col-sm-8'>
@@ -302,7 +300,7 @@ function BusinessProfile() {
 
                                         <div className='col-md-12 col-lg-6'>
                                             <div className='col-sm-12'>
-                                                <label className='form-label fw-bold'>Signature Image</label>
+                                                <label className='form-label'>Signature Image</label>
                                             </div>
 
                                             <div className='offset-sm-2 col-sm-8'>

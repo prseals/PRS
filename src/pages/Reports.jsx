@@ -1,11 +1,11 @@
-
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Aside from '../components/Aside'
-import MainPageHeader from '../components/MainPageHeader';
-import UnderConstruction from '../components/UnderConstruction';
+import { Link } from 'react-router-dom'
+import MainPageHeader from '../components/MainPageHeader'
+import UnderConstruction from '../components/UnderConstruction'
 
-function PurchaseInvoices() {
+function Reports() {
     return (
         <div>
             <Navbar />
@@ -16,11 +16,11 @@ function PurchaseInvoices() {
 
                     <main className='col-md-9 col-lg-10 p-4'>
                         <MainPageHeader
-                            pageName={"Purchase Invoices"}
-                            para={"It shows list of purchase invoices of an organization."}
+                            pageName={"Reports"}
+                            para={"It shows reports to show different statistics."}
                         />
 
-                        <UnderConstruction name="Purchase Invoices" />
+                        <UnderConstruction name="Reports" />
                     </main>
                 </div>
             </div>
@@ -28,4 +28,4 @@ function PurchaseInvoices() {
     )
 }
 
-export default PurchaseInvoices;
+export default Reports

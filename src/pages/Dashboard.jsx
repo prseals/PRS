@@ -18,7 +18,7 @@ function Dashboard() {
                     {/* Main Content */}
                     <main className="col-md-9 col-lg-10 p-4">
 
-                        <h2 className="mb-4">Dashboard</h2>
+                        <h2 className="fw-bold mb-4">Dashboard</h2>
 
                         {/* Cards */}
                         <div className="row g-4">

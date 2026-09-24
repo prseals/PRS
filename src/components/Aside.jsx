@@ -62,41 +62,41 @@ function Aside() {
                     </Link>
                 </li>
 
-                <li className="nav-item mb-2">
+                {/* <li className="nav-item mb-2">
                     <Link to="/Inventories" className="nav-link text-dark">
                         Inventories
                     </Link>
-                </li>
+                </li> */}
 
                 <li className="nav-item mb-2">
-                    <Link to="/Sellinvoices" className="nav-link text-dark">
-                        Sell Invoices
+                    <Link to="/SalesInvoices" className="nav-link text-dark">
+                        Sale Invoices
                     </Link>
                 </li>
 
                 <li className="nav-item mb-2">
-                    <Link to="/Purchaseinvoices" className="nav-link text-dark">
+                    <Link to="/PurchaseInvoices" className="nav-link text-dark">
                         Purchase Invoices
                     </Link>
                 </li>
 
-                <li className="nav-item mb-2">
+                {/* <li className="nav-item mb-2">
                     <Link to="/Orders" className="nav-link text-dark">
                         Orders
                     </Link>
-                </li>
+                </li> */}
 
                 <li className="nav-item mb-2">
-                    <a href="#" className="nav-link text-dark">
+                    <Link to="/Reports" className="nav-link text-dark">
                         Reports
-                    </a>
+                    </Link>
                 </li>
 
-                <li className="nav-item mb-2">
+                {/* <li className="nav-item mb-2">
                     <Link to="/Profiles" className="nav-link text-dark">
                         Profiles
                     </Link>
-                </li>
+                </li> */}
             </ul>
         </aside>
     )

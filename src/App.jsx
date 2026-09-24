@@ -12,12 +12,34 @@ import Employees from './pages/Employees';
 import Dies from './pages/Dies';
 import Inventories from './pages/Inventories';
 import Machines from './pages/Machines';
-import SellInvoices from './pages/SellInvoices';
-import Purchaseinvoices from './pages/Purchaseinvoices';
+import SaleInvoices from './pages/SaleInvoices';
+import PurchaseInvoices from './pages/PurchaseInvoices';
 import Enquiries from './pages/Enquiries';
 import Orders from './pages/Orders';
 import Profiles from './pages/Profiles';
 import BusinessProfile from './pages/BusinessProfile';
+import ProductDetails from './pages/ProductDetails';
+import VendorDetails from './pages/VendorDetails';
+import CustomerDetails from './pages/CustomerDetails';
+import EmployeeDetails from './pages/EmployeeDetails';
+import MachineDetails from './pages/MachineDetails';
+import DieDetails from './pages/DieDetails';
+import EnquiryDetails from './pages/EnquiryDetails';
+import ProductAdd from './pages/ProductAdd';
+import ProductEdit from './pages/ProductEdit';
+import VendorAdd from './pages/VendorAdd';
+import VendorEdit from './pages/VendorEdit';
+import EmployeeAdd from './pages/EmployeeAdd';
+import CustomerAdd from './pages/CustomerAdd';
+import MachineAdd from './pages/MachineAdd';
+import DieAdd from './pages/DieAdd';
+import CustomerEdit from './pages/CustomerEdit';
+import EmployeeEdit from './pages/EmployeeEdit';
+import MachineEdit from './pages/MachineEdit';
+import DieEdit from './pages/DieEdit';
+import SaleInvoiceAdd from './pages/SaleInvoiceAdd';
+import SaleInvoiceEdit from './pages/SaleInvoiceEdit';
+import Reports from './pages/Reports';
 
 
 function App() {
@@ -44,8 +66,38 @@ function App() {
       />
 
       <Route 
+        path='/Products/Add'
+        element={<ProductAdd />}
+      />
+
+      <Route 
+        path="/Products/:id"
+        element={<ProductDetails />}
+      />
+
+      <Route 
+        path='/Products/Edit/:id'
+        element={<ProductEdit />}
+      />
+
+      <Route 
         path='/Vendors'
         element={<Vendors />}
+      />
+
+      <Route 
+        path='/Vendors/:id'
+        element={<VendorDetails />}
+      />
+
+      <Route 
+        path='/Vendors/Edit/:id'
+        element={<VendorEdit />}
+      />
+
+      <Route 
+        path='Vendors/Add'
+        element={<VendorAdd />}
       />
 
       <Route 
@@ -54,13 +106,58 @@ function App() {
       />
 
       <Route 
+        path="/Customers/Add"
+        element={<CustomerAdd />}
+      />
+
+      <Route 
+        path='/Customers/:id'
+        element={<CustomerDetails />}
+      />
+
+      <Route 
+        path='/Customers/Edit/:id'
+        element={<CustomerEdit />}
+      />
+
+      <Route 
         path='/Employees'
         element={<Employees />}
       />
 
       <Route 
+        path='/Employees/Add'
+        element={<EmployeeAdd />}
+      />
+
+      <Route 
+        path='/Employees/:id'
+        element={<EmployeeDetails />}
+      />
+
+      <Route 
+        path='/Employees/Edit/:id'
+        element={<EmployeeEdit />}
+      />
+
+      <Route 
         path="/Dies"
         element={<Dies />}
+      />
+
+      <Route 
+        path='/Dies/Add'
+        element={<DieAdd />}
+      />
+
+      <Route 
+        path='/Dies/:id'
+        element={<DieDetails />}
+      />
+
+      <Route 
+        path='/Dies/Edit/:id'
+        element={<DieEdit />}
       />
 
       <Route 
@@ -74,18 +171,48 @@ function App() {
       />
 
       <Route 
-        path='/Sellinvoices'
-        element={<SellInvoices />}
+        path='/Machines/Add'
+        element={<MachineAdd />}
       />
 
       <Route 
-        path="/Purchaseinvoices"
-        element={<Purchaseinvoices />}
+        path='/Machines/:id'
+        element={<MachineDetails />}
+      />
+
+      <Route 
+        path='/Machines/Edit/:id'
+        element={<MachineEdit />}
+      />
+
+      <Route 
+        path='/SalesInvoices'
+        element={<SaleInvoices />}
+      />
+
+      <Route 
+        path='/SalesInvoices/Add'
+        element={<SaleInvoiceAdd />}
+      />
+
+      <Route 
+        path='/SalesInvoices/Edit/:id'
+        element={<SaleInvoiceEdit />}
+      />
+
+      <Route 
+        path="/PurchaseInvoices"
+        element={<PurchaseInvoices />}
       />
 
       <Route 
         path='/Enquiries'
         element={<Enquiries />}
+      />
+
+      <Route 
+        path='/Enquiries/:id'
+        element={<EnquiryDetails />}
       />
 
       <Route 
@@ -101,6 +228,11 @@ function App() {
       <Route 
         path='/Businessprofile'
         element={<BusinessProfile />}
+      />
+
+      <Route 
+        path='/Reports'
+        element={<Reports />}
       />
     </Routes>
   )
